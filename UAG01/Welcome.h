@@ -10,6 +10,24 @@
 
 @interface Welcome : UIViewController
 
+//Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblWelcome;
+
+
+//Images
+@property (strong, nonatomic) IBOutlet UIImageView *imgWelcome;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imgWelcome2;
+
+//Buttons
+@property (strong, nonatomic) IBOutlet UIButton *btnChange;
+
+//Actions
+
+- (IBAction)btnChangePressed:(id)sender;
+
+- (IBAction)btnChangeNamePressed:(id)sender;
+
 
 @end
 

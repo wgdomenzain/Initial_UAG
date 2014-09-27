@@ -14,14 +14,26 @@
 
 @implementation Welcome
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnChangePressed:(id)sender
+{
+}
+
+- (IBAction)btnChangeNamePressed:(id)sender
+{
+    self.lblWelcome.text                        = @"Walter Gonzalez Domenzain";
+    self.lblWelcome.adjustsFontSizeToFitWidth   = YES;
+    self.lblWelcome.textColor                   = [UIColor redColor];
+}
 @end

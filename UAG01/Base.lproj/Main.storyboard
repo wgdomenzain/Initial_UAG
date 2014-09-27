@@ -33,10 +33,35 @@
                                 <rect key="frame" x="40" y="188" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5xx-kE-KfR">
+                                <rect key="frame" x="67" y="345" width="187" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Foto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChangePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GYb-4n-GEj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SKi-HP-gij">
+                                <rect key="frame" x="90" y="383" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar Nombre">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChangeNamePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ya1-yY-Cd9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnChange" destination="5xx-kE-KfR" id="Vz1-dX-73c"/>
+                        <outlet property="imgWelcome" destination="HFS-ZY-xS8" id="4AG-9A-zBA"/>
+                        <outlet property="lblWelcome" destination="nv8-sd-ZUX" id="HjG-BH-86V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
