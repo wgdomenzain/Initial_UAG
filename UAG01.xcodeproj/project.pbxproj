@@ -16,6 +16,8 @@
 		D122009D19D72E7A00DDB074 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D122009B19D72E7A00DDB074 /* LaunchScreen.xib */; };
 		D12200A919D72E7A00DDB074 /* UAG01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12200A819D72E7A00DDB074 /* UAG01Tests.m */; };
 		D12200B419D7363000DDB074 /* imgWelcome.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D12200B319D7363000DDB074 /* imgWelcome.jpeg */; };
+		D12200B619D73DBB00DDB074 /* imgCantinflas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D12200B519D73DBB00DDB074 /* imgCantinflas.jpg */; };
+		D12200B919D740A200DDB074 /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = D12200B819D740A200DDB074 /* View1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		D12200A719D72E7A00DDB074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12200A819D72E7A00DDB074 /* UAG01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAG01Tests.m; sourceTree = "<group>"; };
 		D12200B319D7363000DDB074 /* imgWelcome.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgWelcome.jpeg; sourceTree = "<group>"; };
+		D12200B519D73DBB00DDB074 /* imgCantinflas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgCantinflas.jpg; sourceTree = "<group>"; };
+		D12200B719D740A200DDB074 /* View1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1.h; sourceTree = "<group>"; };
+		D12200B819D740A200DDB074 /* View1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +90,9 @@
 		D122008819D72E7A00DDB074 /* UAG01 */ = {
 			isa = PBXGroup;
 			children = (
+				D12200BA19D740B000DDB074 /* Controllers */,
 				D122008D19D72E7A00DDB074 /* AppDelegate.h */,
 				D122008E19D72E7A00DDB074 /* AppDelegate.m */,
-				D122009319D72E7A00DDB074 /* Welcome.h */,
-				D122009419D72E7A00DDB074 /* Welcome.m */,
 				D122009619D72E7A00DDB074 /* Main.storyboard */,
 				D122009919D72E7A00DDB074 /* Images.xcassets */,
 				D122009B19D72E7A00DDB074 /* LaunchScreen.xib */,
@@ -128,9 +132,21 @@
 		D12200B219D7363000DDB074 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				D12200B519D73DBB00DDB074 /* imgCantinflas.jpg */,
 				D12200B319D7363000DDB074 /* imgWelcome.jpeg */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		D12200BA19D740B000DDB074 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D122009319D72E7A00DDB074 /* Welcome.h */,
+				D122009419D72E7A00DDB074 /* Welcome.m */,
+				D12200B719D740A200DDB074 /* View1.h */,
+				D12200B819D740A200DDB074 /* View1.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12200B619D73DBB00DDB074 /* imgCantinflas.jpg in Resources */,
 				D12200B419D7363000DDB074 /* imgWelcome.jpeg in Resources */,
 				D122009819D72E7A00DDB074 /* Main.storyboard in Resources */,
 				D122009D19D72E7A00DDB074 /* LaunchScreen.xib in Resources */,
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D122008F19D72E7A00DDB074 /* AppDelegate.m in Sources */,
+				D12200B919D740A200DDB074 /* View1.m in Sources */,
 				D122009219D72E7A00DDB074 /* UAG01.xcdatamodeld in Sources */,
 				D122009519D72E7A00DDB074 /* Welcome.m in Sources */,
 				D122008C19D72E7A00DDB074 /* main.m in Sources */,

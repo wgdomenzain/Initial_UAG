@@ -22,6 +22,8 @@
 //Buttons
 @property (strong, nonatomic) IBOutlet UIButton *btnChange;
 
+@property (strong, nonatomic) IBOutlet UITextField *txtName;
+
 //Actions
 
 - (IBAction)btnChangePressed:(id)sender;

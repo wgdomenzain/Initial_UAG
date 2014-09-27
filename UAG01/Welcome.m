@@ -8,6 +8,8 @@
 
 #import "Welcome.h"
 
+#define nCoolPink       colorWithRed:255/255.0 green:135/255.0 blue:233/255.0 alpha:1.0
+
 @interface Welcome ()
 
 @end
@@ -26,14 +28,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+//-------------------------------------------------------------------------------
+//Dissapear keyboard
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.txtName       resignFirstResponder];
+}
+
 - (IBAction)btnChangePressed:(id)sender
 {
+    self.imgWelcome.image = [UIImage imageNamed: @"imgCantinflas.jpg"];
 }
 
 - (IBAction)btnChangeNamePressed:(id)sender
 {
     self.lblWelcome.text                        = @"Walter Gonzalez Domenzain";
     self.lblWelcome.adjustsFontSizeToFitWidth   = YES;
-    self.lblWelcome.textColor                   = [UIColor redColor];
+    self.lblWelcome.textColor                   = [UIColor nCoolPink];
 }
+
+
 @end

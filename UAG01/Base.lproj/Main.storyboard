@@ -17,7 +17,6 @@
                                 <rect key="frame" x="35" y="73" width="250" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I7H-ik-rhb">
@@ -29,6 +28,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cId-qu-YOB">
+                                <rect key="frame" x="50" y="441" width="220" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j0T-Le-Rcc" kind="modal" id="dNd-bg-yA6"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgWelcome.jpeg" id="HFS-ZY-xS8">
                                 <rect key="frame" x="40" y="188" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -53,6 +63,15 @@
                                     <action selector="btnChangeNamePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ya1-yY-Cd9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre completo" minimumFontSize="17" id="EGP-zJ-Tid">
+                                <rect key="frame" x="50" y="129" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="F7d-Xw-q05"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -61,11 +80,36 @@
                         <outlet property="btnChange" destination="5xx-kE-KfR" id="Vz1-dX-73c"/>
                         <outlet property="imgWelcome" destination="HFS-ZY-xS8" id="4AG-9A-zBA"/>
                         <outlet property="lblWelcome" destination="nv8-sd-ZUX" id="HjG-BH-86V"/>
+                        <outlet property="txtName" destination="EGP-zJ-Tid" id="tya-5K-u59"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="128"/>
+            <point key="canvasLocation" x="-140" y="124"/>
+        </scene>
+        <!--View1-->
+        <scene sceneID="bnG-rC-j2u">
+            <objects>
+                <viewController storyboardIdentifier="View1" id="j0T-Le-Rcc" customClass="View1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyo-2U-on7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vpA-Pq-3jj">
+                                <rect key="frame" x="101" y="153" width="118" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8mg-VO-RcM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMZ-iP-tvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="124"/>
         </scene>
     </scenes>
     <resources>
